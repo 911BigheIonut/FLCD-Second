@@ -1,0 +1,34 @@
+startprogram
+var integer num1, num2, num3, max, min;
+
+
+num1 = 10;
+num2 = 5;
+num3 = &12;
+#we have a lexical error above because of the invalid character
+
+
+if num1 >= num2 and num1 >= num3 then
+    max = num1;
+else
+    if num2 >= num1 and num2 >= num3 then
+        max = num2;
+    else
+        max = num3;
+    endif;
+endif;
+
+if num1 <= num2 and num1 <= num3 then
+    min = num1;
+else
+    if num2 <= num1 and num2 <= num3 then
+        min = num2;
+    else
+        min = num3;
+    endif;
+endif;
+
+write(max);
+write(min);
+
+endprogram

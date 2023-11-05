@@ -1,0 +1,24 @@
+startprogram
+var integer num, i, isPrime, numSecond;
+
+num = 13;
+isPrime = 1;
+numSecond=0;
+
+if num <= 1 then
+    isPrime = 0;
+else
+    for i = 2 to num - 1 do
+        if num % i = 0 then
+            isPrime = 0;
+        endif
+    endfor
+endif
+
+if isPrime = 1 then
+    num = 0;
+else
+    numSecond = 0;
+endif
+
+endprogram

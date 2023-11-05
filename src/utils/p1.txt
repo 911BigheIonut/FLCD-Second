@@ -1,0 +1,33 @@
+startprogram
+var integer numOne, numTwo, numThree, max, min;
+
+numOne = 10;
+numTwo = 55;
+numThree = 12;
+
+
+if numOne >= numTwo and numOne >= numThree then
+    max = 10;
+else
+    if numTwo >= numOne and numTwo >= numThree then
+        max = 55;
+    else
+        max = 12;
+    endif
+endif
+
+if numOne <= numTwo and numOne <= numThree then
+    min = 10;
+else
+    if numTwo <= numOne and numTwo <= numThree then
+        min = 55;
+    else
+        min = 12;
+    endif
+endif
+
+
+
+min = 12;
+
+endprogram
