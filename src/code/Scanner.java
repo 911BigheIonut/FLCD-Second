@@ -75,7 +75,7 @@ public class Scanner {
     }
 
 
-    private boolean treatStringConstant() {
+    private boolean checkStringConstant() {
         var regexForStringConstant = Pattern.compile("^\"[a-zA-z0-9_ ?:*^+=.!]*\"");
         var matcher = regexForStringConstant.matcher(program.substring(index));
         if (!matcher.find()) {
@@ -102,7 +102,7 @@ public class Scanner {
 
 
 
-    private boolean checkIfValid(String possibleIdentifier, String programSubstring) {
+    private boolean checkValidity(String possibleIdentifier, String programSubstring) {
         if (reservedWords.contains(possibleIdentifier)) {
             return false;
         }
@@ -113,7 +113,7 @@ public class Scanner {
     }
 
 
-    private boolean treatIdentifier() {
+    private boolean checkIdentifier() {
         // Create a regex pattern to match variable declarations
        var regexForVariableDeclaration = Pattern.compile("^var (integer|string|char) ([a-zA-Z_][a-zA-Z_\\d]*(, [a-zA-Z_][a-zA-Z_\\d]*)*);");
         //var regexForVariableDeclaration = Pattern.compile("^([a-zA-Z_][a-zA-Z_\\d]*(, [a-zA-Z_][a-zA-Z_\\d]*)*);");
@@ -133,7 +133,7 @@ public class Scanner {
 
             // Process and add each variable to your symbol table
             for (String variableName : variableNameArray) {
-                if (!checkIfValid(variableName, program.substring(index))) {
+                if (!checkValidity(variableName, program.substring(index))) {
                     return false;
                 }
 
@@ -238,7 +238,7 @@ public class Scanner {
 
 
 
-    private boolean treatFromTokenList() {
+    private boolean checkFromTokenList() {
         // Split the program string by whitespace or newline
         String[] tokensInProgram = program.substring(index).split("[\\s\\n]+");
 
@@ -285,7 +285,7 @@ public class Scanner {
 
 
 
-    private boolean treatIntConstant() {
+    private boolean checkIntConstant() {
         var regexForIntConstant = Pattern.compile("^[+-]?[1-9][0-9]*|0(?![0-9])");
         var matcher = regexForIntConstant.matcher(program.substring(index));
         if (!matcher.find()) {
@@ -312,18 +312,23 @@ public class Scanner {
         if (index == program.length()) {
             return;
         }
-        if (treatIdentifier()) {
+
+        if (checkIdentifier()) {
             return;
         }
-        if (treatStringConstant()) {
+
+        if (checkFromTokenList()) {
             return;
         }
-        if (treatIntConstant()) {
+
+
+        if (checkStringConstant()) {
             return;
         }
-        if (treatFromTokenList()) {
+        if (checkIntConstant()) {
             return;
         }
+
         throw new ScanException("Lexical error: invalid token at line " + currentLine + ", index " + index);
     }
 

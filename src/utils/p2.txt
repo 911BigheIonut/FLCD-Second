@@ -3,7 +3,7 @@ var integer num, i, isPrime, numSecond;
 
 num = 13;
 isPrime = 1;
-numSecond=0;
+numSecond = 0;
 
 if num <= 1 then
     isPrime = 0;

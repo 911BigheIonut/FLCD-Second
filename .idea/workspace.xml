@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31efa343-b524-4d4a-987d-2684926c171d" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/HashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/KeyValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/ScanException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/Scanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/SymbolTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/p1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/p1err.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/p2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/p3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/token.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IDK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/p1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/p1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/p2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/p2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +31,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/School_Projects/Anul3_Semestrul1/FLCD/Labs/Lab5IntegrateLab1a1bLab2Lab3/Scanner"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/School_Projects/Anul3_Semestrul1/FLCD/Labs/Lab5IntegrateLab1a1bLab2Lab3/Scanner&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,7 +47,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699102502789</updated>
-      <workItem from="1699102504493" duration="31310000" />
+      <workItem from="1699102504493" duration="31628000" />
+      <workItem from="1699258160284" duration="4910000" />
     </task>
     <task id="LOCAL-00001" summary="firs commit">
       <created>1699102977574</created>
@@ -73,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699103182271</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="second commit">
+      <created>1699214129500</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699214129500</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,54 +97,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>134</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>142</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/code/Scanner.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/src/code/HashTable.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

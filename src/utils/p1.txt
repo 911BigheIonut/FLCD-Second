@@ -27,7 +27,6 @@ else
 endif
 
 
-
 min = 12;
 
 endprogram
