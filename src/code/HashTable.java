@@ -30,11 +30,13 @@ public class HashTable<T> {
 
     public KeyValue<Integer, Integer> add(T key) throws Exception {
         int hashValue = getHashValue(key);
-        KeyValue<Integer, Integer> keyValue = new KeyValue<>(hashValue, items.get(hashValue).indexOf(key));
+       // KeyValue<Integer, Integer> keyValue = new KeyValue<>(hashValue, items.get(hashValue).indexOf(key));
         if (!items.get(hashValue).contains(key)) {
             items.get(hashValue).add(key);
+            KeyValue<Integer, Integer> keyValue = new KeyValue<>(hashValue, items.get(hashValue).indexOf(key));
             return keyValue;
         }
+
         throw new Exception("Key " + key + " is already in the table!");
     }
 

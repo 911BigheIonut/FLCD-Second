@@ -16,9 +16,9 @@ else
 endif
 
 if isPrime = 1 then
-    num = 0;
+    write num;
 else
-    numSecond = 0;
+    write numSecond;
 endif
 
 endprogram

@@ -106,6 +106,9 @@ public class Scanner {
         if (reservedWords.contains(possibleIdentifier)) {
             return false;
         }
+//        if (Pattern.compile("^[A-Za-z_][A-Za-z]*").matcher(programSubstring).find()) {
+//            return true;
+//        }
         if (Pattern.compile("^[A-Za-z_][A-Za-z]*").matcher(programSubstring).find()) {
             return true;
         }
@@ -115,47 +118,25 @@ public class Scanner {
 
     private boolean checkIdentifier() {
         // Create a regex pattern to match variable declarations
-       var regexForVariableDeclaration = Pattern.compile("^var (integer|string|char) ([a-zA-Z_][a-zA-Z_\\d]*(, [a-zA-Z_][a-zA-Z_\\d]*)*);");
-        //var regexForVariableDeclaration = Pattern.compile("^([a-zA-Z_][a-zA-Z_\\d]*(, [a-zA-Z_][a-zA-Z_\\d]*)*);");
-        //var regexForVariableDeclaration = Pattern.compile("^var (integer|string|char) ([a-zA-Z_][a-zA-Z_]*(, [a-zA-Z_][a-zA-Z_]*)*);");
-        //var regexForVariableDeclaration = Pattern.compile("^var (integer|string|char) ([a-zA-Z_][a-zA-Z_]+(, [a-zA-Z_][a-zA-Z_]+)+);");
-        var matcher = regexForVariableDeclaration.matcher(program.substring(index));
+        var regexForIdentifier = Pattern.compile("^([a-zA-Z][a-zA-Z]*)");
+        var matcher = regexForIdentifier.matcher(program.substring(index));
 
-        if (matcher.find()) {
-            // Extract the variable type
-            String variableType = matcher.group(1);
-
-            // Extract the list of variable names
-            String variableNames = matcher.group(2);
-
-            // Split the variable names into an array
-            String[] variableNameArray = variableNames.split(", ");
-
-            // Process and add each variable to your symbol table
-            for (String variableName : variableNameArray) {
-                if (!checkValidity(variableName, program.substring(index))) {
-                    return false;
-                }
-
-                // Add the variable to the symbol table
-                KeyValue<Integer, Integer> position;
-                try {
-                    position = symbolTable.addIdentifier(variableName);
-                } catch (Exception e) {
-                    position = symbolTable.getPositionIdentifier(variableName);
-                }
-
-                // Add the variable to PIF with its type
-                PIF.add(new KeyValue<>(variableType, position));
-            }
-
-            // Update the index to skip the processed part
-            index += matcher.group().length();
-
-            return true;
+        if (!matcher.find()) {
+            return false;
         }
-
-        return false;
+        var identifier = matcher.group(1);
+        if (!checkValidity(identifier, program.substring(index))) {
+            return false;
+        }
+        index += identifier.length();
+        KeyValue<Integer, Integer> position;
+        try {
+            position = symbolTable.addIdentifier(identifier);
+        } catch (Exception e) {
+            position = symbolTable.getPositionIdentifier(identifier);
+        }
+        PIF.add(new KeyValue<>("identifier", position));
+        return true;
     }
 
 
@@ -268,13 +249,13 @@ public class Scanner {
         }
 
 
-        // Check if the token is a valid identifier
-        if (Pattern.compile("^[A-Za-z_][A-Za-z_\\d]*$").matcher(possibleToken).find()) {
-            index += possibleToken.length();
-            PIF.add(new KeyValue<>("identifier", new KeyValue<>(-1, -1)));
-            return true;
-        }
-        // If no token was recognized, return false
+//        // Check if the token is a valid identifier
+//        if (Pattern.compile("^[A-Za-z_][A-Za-z_\\d]*$").matcher(possibleToken).find()) {
+//            index += possibleToken.length();
+//            PIF.add(new KeyValue<>("identifier", new KeyValue<>(-1, -1)));
+//            return true;
+//        }
+//        // If no token was recognized, return false
         return false;
     }
 
@@ -313,11 +294,13 @@ public class Scanner {
             return;
         }
 
-        if (checkIdentifier()) {
+
+
+        if (checkFromTokenList()) {
             return;
         }
 
-        if (checkFromTokenList()) {
+        if (checkIdentifier()) {
             return;
         }
 
@@ -329,7 +312,7 @@ public class Scanner {
             return;
         }
 
-        throw new ScanException("Lexical error: invalid token at line " + currentLine + ", index " + index);
+        throw new ScanException("Error because of invalid token at line " + currentLine + ", index " + index);
     }
 
 

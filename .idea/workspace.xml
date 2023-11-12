@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31efa343-b524-4d4a-987d-2684926c171d" name="Changes" comment="second commit">
+    <list default="true" id="31efa343-b524-4d4a-987d-2684926c171d" name="Changes" comment="third commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/HashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Scanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/p1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/p1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/p2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/p2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/p3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/p3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,9 @@
       <option name="presentableId" value="Default" />
       <updated>1699102502789</updated>
       <workItem from="1699102504493" duration="31628000" />
-      <workItem from="1699258160284" duration="4910000" />
+      <workItem from="1699258160284" duration="5101000" />
+      <workItem from="1699462134121" duration="46000" />
+      <workItem from="1699816299717" duration="3968000" />
     </task>
     <task id="LOCAL-00001" summary="firs commit">
       <created>1699102977574</created>
@@ -71,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699214129500</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="third commit">
+      <created>1699263592636</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699263592636</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,14 +102,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="firs commit" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="third commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/code/HashTable.java</url>
-          <line>52</line>
+          <line>54</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

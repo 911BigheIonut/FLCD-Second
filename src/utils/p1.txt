@@ -1,5 +1,5 @@
 startprogram
-var integer numOne, numTwo, numThree, max, min;
+var integer numOne, numOmf, numTwo, numThree, max, min;
 
 numOne = 10;
 numTwo = 55;
@@ -7,26 +7,26 @@ numThree = 12;
 
 
 if numOne >= numTwo and numOne >= numThree then
-    max = 10;
+    max = numOne;
 else
     if numTwo >= numOne and numTwo >= numThree then
-        max = 55;
+        max = numTwo;
     else
-        max = 12;
+        max = numThree;
     endif
 endif
 
 if numOne <= numTwo and numOne <= numThree then
-    min = 10;
+    min = numOne;
 else
     if numTwo <= numOne and numTwo <= numThree then
-        min = 55;
+        min = numTwo;
     else
-        min = 12;
+        min = numThree;
     endif
 endif
 
 
-min = 12;
-
+write max;
+write min;
 endprogram

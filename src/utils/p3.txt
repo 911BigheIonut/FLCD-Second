@@ -3,22 +3,24 @@ var integer n, i, num, sum, max, min;
 
 n = 5;
 sum = 0;
-max = 0;
+max = -10000;
 min = 10000;
 
 for i = 1 to n do
-    num = 3;
-    sum = 3;
+    read num;
+    sum = sum + num;
 
     if num > max then
-        max = 3;
+        max = num;
     endif
 
     if num < min then
-        min = 3;
+        min = num;
     endif
 endfor
 
 
-
+write sum;
+write max;
+write min;
 endprogram
