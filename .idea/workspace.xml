@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31efa343-b524-4d4a-987d-2684926c171d" name="Changes" comment="third commit">
+    <list default="true" id="31efa343-b524-4d4a-987d-2684926c171d" name="Changes" comment="4th commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/HashTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/Scanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/p1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/p1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/p2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/p2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/p3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/p3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +49,7 @@
       <workItem from="1699102504493" duration="31628000" />
       <workItem from="1699258160284" duration="5101000" />
       <workItem from="1699462134121" duration="46000" />
-      <workItem from="1699816299717" duration="3968000" />
+      <workItem from="1699816299717" duration="5125000" />
     </task>
     <task id="LOCAL-00001" summary="firs commit">
       <created>1699102977574</created>
@@ -82,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699263592636</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4th commit">
+      <created>1699820581971</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699820581971</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +107,8 @@
     <MESSAGE value="firs commit" />
     <MESSAGE value="second commit" />
     <MESSAGE value="third commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
+    <MESSAGE value="4th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

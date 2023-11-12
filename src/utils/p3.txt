@@ -1,6 +1,8 @@
 startprogram
 var integer n, i, num, sum, max, min;
+var string x;
 
+x = caca;
 n = 5;
 sum = 0;
 max = -10000;
@@ -23,4 +25,5 @@ endfor
 write sum;
 write max;
 write min;
+write "idk";
 endprogram

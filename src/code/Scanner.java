@@ -76,7 +76,7 @@ public class Scanner {
 
 
     private boolean checkStringConstant() {
-        var regexForStringConstant = Pattern.compile("^\"[a-zA-z0-9_ ?:*^+=.!]*\"");
+        var regexForStringConstant = Pattern.compile("^\"[a-zA-Z0-9_ ?:*^+=.!]*\"");
         var matcher = regexForStringConstant.matcher(program.substring(index));
         if (!matcher.find()) {
             if (Pattern.compile("^\"[^\"]\"").matcher(program.substring(index)).find()) {
@@ -295,19 +295,24 @@ public class Scanner {
         }
 
 
+        if (checkStringConstant()) {
+            return;
+        }
+
 
         if (checkFromTokenList()) {
             return;
         }
+
 
         if (checkIdentifier()) {
             return;
         }
 
 
-        if (checkStringConstant()) {
-            return;
-        }
+
+
+
         if (checkIntConstant()) {
             return;
         }
